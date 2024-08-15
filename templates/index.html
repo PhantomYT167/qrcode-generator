@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <center><h1>QR Code Generator</h1>
+        <form action="/home" method="get">
+            <input type="text" name="url" placeholder="Введите URL">
+            <button type="submit">Сгенерировать QR-код</button>
+        </form>
+        <h2>Ваш QR-код:</h2>
+        <img class="image" src="{{ qrcode }}" alt="QR Code">
+        {% if name %}
+            <p>Привет, {{ name }}!</p>
+        {% endif %}</center>
+        <div class="ad"><a href="https://t.me/sendushka_novosti_chek"><img class="ad2" src="/static/ad2.jpg" alt=""></a>
+            <a href="https://t.me/avatarki2024f"><img class="ad1" src="/static/ad1.jpg" alt=""></a></div>
+</body>
+</html>

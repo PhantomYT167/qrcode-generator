@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+body h1:hover{
+    font-size: 40px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+h2{
+    color: rgb(55, 0, 255);
+}
+
+body h2:hover{
+    cursor: pointer;
+    margin-top: 100px;
+    transition-duration: 3s;
+}
+.image:hover{
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+
+.ad1{
+   justify-content: flex-start;
+   height: 350px;
+   width: 250px;
+   margin-top: 50px;
+}
+
+.ad2{
+    justify-content: flex-end;
+    height: 350px;
+    width: 250px;
+    margin-top: 50px;
+}
+
+
+.ad1:hover{
+    height: 450px;
+    width: 350px;
+    transition-duration: 1s;
+}
+.ad2:hover{
+    height: 450px;
+    width: 350px;
+    transition-duration: 1s;
+}
+
+.ad{
+    margin-top: -350px;
+}
